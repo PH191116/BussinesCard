@@ -1,0 +1,138 @@
+/* AGREGANDO PROPIEDADES PARA QUE PADDING Y BORDER
+   NO SEAN AGREGADOS EN EL ANCHO
+
+   font para title:   font-family: "Poppins", sans-serif;
+
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #677489;
+    background-color: #F2F5F9;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: #111729;
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: #111729;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-image: url("../assets/img/hero-image-business-card.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18.75em;
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    border-radius: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    margin-top: 16rem;
+}
+
+.card-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.card-body h2 {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+@media(min-width: 1200px) {
+    .card {
+        background-image: url("../assets/img/hero-image-business-card.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 22.75em;
+        margin: auto;
+        width: 40%;
+        text-align: justify;
+        border-radius: 1rem;
+    }
+
+    .card-body {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .card-img {
+        width: 100%;
+        margin-top: 18rem;
+    }
+
+    footer {
+        width: 40% !important;
+    }
+
+    .footer {
+        margin: auto;
+        padding-left: 0 !important;
+
+    }
+
+}
+
+footer {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+footer h4 {
+    margin-bottom: 0;
+    padding-left: 0.5rem;
+}
+
+footer p {
+    margin-top: 0;
+    padding-left: 0.5rem;
+
+}
+
+.footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 10rem;
+}
+
+.footer img {
+    width: 2rem;
+    border-radius: 2em;
+}
+
+.footer-body {
+    display: inline-block;
+}
